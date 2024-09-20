@@ -4,8 +4,7 @@ class Solution {
     for (int i = 0; i < reverseS.length(); i++) {
       // Check if the original string 's' starts with the current suffix of 't'
       if (s.startsWith(reverseS.substring(i))) {
-        // If a matching prefix-suffix is found, return the result by adding
-        // the unmatched part of 't' to the front of 's' to form the palindrome
+        // If a matching prefix-suffix is found, return the result
         return reverseS.substring(0, i) + s;
       }
     }
